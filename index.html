@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Switch Monitoring Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Switch Monitoring Dashboard</h1>
+        <div class="grid-container">
+            <div class="card">
+                <h2>Real-time Status</h2>
+                <div id="status" class="status"></div>
+            </div>
+            <div class="card">
+                <h2>Load & Temperature</h2>
+                <canvas id="metricsChart"></canvas>
+            </div>
+            <div class="card">
+                <h2>Anomaly Detection</h2>
+                <div id="anomalyAlert"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
